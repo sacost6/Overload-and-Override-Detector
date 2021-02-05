@@ -67,7 +67,6 @@ public class Test05_Exceptions {
     @Test
     public void callMethodWithWrongReceiver() throws Throwable {
         ReflectionUtils utils = Main.getReflectionUtils();
-
         {
             A a = new A();
             Assert.assertNull(a.s);
@@ -122,9 +121,9 @@ public class Test05_Exceptions {
 
         // public String methodThatDoesNotExist() { this.s = "impossible"; return null; }
 
-        public void throwsCheckedException(String s) throws Checked { throw (this.e = new Checked("Checked" + s)); }
+        public void throwsCheckedException(String s) throws Checked { throw (e = new Checked("Checked" + s)); }
 
-        public void throwsUncheckedException(String s) { throw (this.u = new Unchecked("Unchecked" + s)); }
+        public void throwsUncheckedException(String s) { throw (u = new Unchecked("Unchecked" + s)); }
 
     }
 

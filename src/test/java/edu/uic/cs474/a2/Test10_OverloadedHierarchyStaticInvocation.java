@@ -98,14 +98,14 @@ public class Test10_OverloadedHierarchyStaticInvocation {
         public ArgumentType(String s) { this.s  = s; }
 
         @Override
-        public String toString() { return "ArgumentType" + "{" + "s='" + this.s + '\'' + '}'; }
+        public String toString() { return "ArgumentType" + "{" + "s='" + s + '\'' + '}'; }
     }
 
     public static class ExtendsArgumentType extends ArgumentType {
         public ExtendsArgumentType(String s) { super("ExtendsArgumentType" + s); }
 
         @Override
-        public String toString() { return "ExtendsArgumentType" + "{" + "s='" + this.s + '\'' + '}'; }
+        public String toString() { return "ExtendsArgumentType" + "{" + "s='" + s + '\'' + '}'; }
     }
 
     public static class NotAnArgumentType {
@@ -114,7 +114,7 @@ public class Test10_OverloadedHierarchyStaticInvocation {
         public NotAnArgumentType(String s) { this.s  = s; }
 
         @Override
-        public String toString() { return "NotAnArgumentType" + this.s; }
+        public String toString() { return "NotAnArgumentType" + s; }
 
     }
 }
