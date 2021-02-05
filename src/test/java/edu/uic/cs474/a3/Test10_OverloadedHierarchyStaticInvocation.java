@@ -1,5 +1,7 @@
-package edu.uic.cs474.a2;
+package edu.uic.cs474.a3;
 
+import edu.uic.cs474.a3.Main;
+import edu.uic.cs474.a3.ReflectionUtils;
 import org.junit.Assert;
 import org.junit.Test;
 
